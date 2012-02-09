@@ -1,0 +1,345 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B1A4DAF514E3C32C00136104 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1A4DAF414E3C32C00136104 /* Foundation.framework */; };
+		B1A4DAF714E3C32C00136104 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1A4DAF614E3C32C00136104 /* UIKit.framework */; };
+		B1A4DB0614E3C32C00136104 /* SearcherController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A4DB0514E3C32C00136104 /* SearcherController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B1A4DAF114E3C32C00136104 /* Searcher */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = Searcher; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1A4DAF414E3C32C00136104 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B1A4DAF614E3C32C00136104 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B1A4DAFB14E3C32C00136104 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		B1A4DAFC14E3C32C00136104 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		B1A4DAFD14E3C32C00136104 /* preinst */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = preinst; path = Package/DEBIAN/preinst; sourceTree = "<group>"; };
+		B1A4DAFE14E3C32C00136104 /* postinst */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = postinst; path = Package/DEBIAN/postinst; sourceTree = "<group>"; };
+		B1A4DAFF14E3C32C00136104 /* prerm */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = prerm; path = Package/DEBIAN/prerm; sourceTree = "<group>"; };
+		B1A4DB0014E3C32C00136104 /* postrm */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = postrm; path = Package/DEBIAN/postrm; sourceTree = "<group>"; };
+		B1A4DB0214E3C32C00136104 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		B1A4DB0314E3C32C00136104 /* Searcher-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Searcher-Prefix.pch"; sourceTree = "<group>"; };
+		B1A4DB0414E3C32C00136104 /* SearcherController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearcherController.h; sourceTree = "<group>"; };
+		B1A4DB0514E3C32C00136104 /* SearcherController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearcherController.m; sourceTree = "<group>"; };
+		B1A4DB0B14E3C32C00136104 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Package/System/Library/WeeAppPlugins/Searcher.bundle/Info.plist; sourceTree = "<group>"; };
+		B1A4DB0C14E3C32C00136104 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = Package/System/Library/WeeAppPlugins/Searcher.bundle/InfoPlist.strings; sourceTree = "<group>"; };
+		B1A4DB0D14E3C32C00136104 /* WeeAppBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "WeeAppBackground@2x.png"; path = "Package/System/Library/WeeAppPlugins/Searcher.bundle/WeeAppBackground@2x.png"; sourceTree = "<group>"; };
+		B1A4DB0E14E3C32C00136104 /* WeeAppBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WeeAppBackground.png; path = Package/System/Library/WeeAppPlugins/Searcher.bundle/WeeAppBackground.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1A4DAED14E3C32C00136104 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1A4DAF514E3C32C00136104 /* Foundation.framework in Frameworks */,
+				B1A4DAF714E3C32C00136104 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B1A4DAE514E3C32C00136104 = {
+			isa = PBXGroup;
+			children = (
+				B1A4DAF814E3C32C00136104 /* Searcher */,
+				B1A4DAF314E3C32C00136104 /* Frameworks */,
+				B1A4DAF214E3C32C00136104 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B1A4DAF214E3C32C00136104 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1A4DAF114E3C32C00136104 /* Searcher */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1A4DAF314E3C32C00136104 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1A4DAF414E3C32C00136104 /* Foundation.framework */,
+				B1A4DAF614E3C32C00136104 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B1A4DAF814E3C32C00136104 /* Searcher */ = {
+			isa = PBXGroup;
+			children = (
+				B1A4DB0414E3C32C00136104 /* SearcherController.h */,
+				B1A4DB0514E3C32C00136104 /* SearcherController.m */,
+				B1A4DAF914E3C32C00136104 /* Package */,
+				B1A4DB0114E3C32C00136104 /* Supporting Files */,
+			);
+			path = Searcher;
+			sourceTree = "<group>";
+		};
+		B1A4DAF914E3C32C00136104 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				B1A4DAFA14E3C32C00136104 /* DEBIAN */,
+				B1A4DB0714E3C32C00136104 /* System */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		B1A4DAFA14E3C32C00136104 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				B1A4DAFB14E3C32C00136104 /* control.txt */,
+				B1A4DAFC14E3C32C00136104 /* control */,
+				B1A4DAFD14E3C32C00136104 /* preinst */,
+				B1A4DAFE14E3C32C00136104 /* postinst */,
+				B1A4DAFF14E3C32C00136104 /* prerm */,
+				B1A4DB0014E3C32C00136104 /* postrm */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		B1A4DB0114E3C32C00136104 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1A4DB0214E3C32C00136104 /* PackageVersion.plist */,
+				B1A4DB0314E3C32C00136104 /* Searcher-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B1A4DB0714E3C32C00136104 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				B1A4DB0814E3C32C00136104 /* Library */,
+			);
+			name = System;
+			sourceTree = "<group>";
+		};
+		B1A4DB0814E3C32C00136104 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				B1A4DB0914E3C32C00136104 /* WeeAppPlugins */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		B1A4DB0914E3C32C00136104 /* WeeAppPlugins */ = {
+			isa = PBXGroup;
+			children = (
+				B1A4DB0A14E3C32C00136104 /* ___PACKAGENAME___ */,
+			);
+			name = WeeAppPlugins;
+			sourceTree = "<group>";
+		};
+		B1A4DB0A14E3C32C00136104 /* ___PACKAGENAME___ */ = {
+			isa = PBXGroup;
+			children = (
+				B1A4DB0B14E3C32C00136104 /* Info.plist */,
+				B1A4DB0C14E3C32C00136104 /* InfoPlist.strings */,
+				B1A4DB0D14E3C32C00136104 /* WeeAppBackground@2x.png */,
+				B1A4DB0E14E3C32C00136104 /* WeeAppBackground.png */,
+			);
+			name = "___PACKAGENAME___";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B1A4DAEE14E3C32C00136104 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B1A4DAF014E3C32C00136104 /* Searcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1A4DB1114E3C32C00136104 /* Build configuration list for PBXNativeTarget "Searcher" */;
+			buildPhases = (
+				B1A4DAEC14E3C32C00136104 /* Sources */,
+				B1A4DAED14E3C32C00136104 /* Frameworks */,
+				B1A4DAEE14E3C32C00136104 /* Headers */,
+				B1A4DAEF14E3C32C00136104 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Searcher;
+			productName = Searcher;
+			productReference = B1A4DAF114E3C32C00136104 /* Searcher */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1A4DAE714E3C32C00136104 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = B1A4DAEA14E3C32C00136104 /* Build configuration list for PBXProject "Searcher" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B1A4DAE514E3C32C00136104;
+			productRefGroup = B1A4DAF214E3C32C00136104 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1A4DAF014E3C32C00136104 /* Searcher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B1A4DAEF14E3C32C00136104 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1A4DAEC14E3C32C00136104 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1A4DB0614E3C32C00136104 /* SearcherController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B1A4DB0F14E3C32C00136104 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		B1A4DB1014E3C32C00136104 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		B1A4DB1214E3C32C00136104 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_EXTENSION = "";
+				EXECUTABLE_NAME = Searcher;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Searcher/Searcher-Prefix.pch";
+				INSTALL_PATH = /System/Library/WeeAppPlugins/Searcher.bundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevRespringOnInstall = NO;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+		B1A4DB1314E3C32C00136104 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_EXTENSION = "";
+				EXECUTABLE_NAME = Searcher;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Searcher/Searcher-Prefix.pch";
+				INSTALL_PATH = /System/Library/WeeAppPlugins/Searcher.bundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevRespringOnInstall = NO;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1A4DAEA14E3C32C00136104 /* Build configuration list for PBXProject "Searcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1A4DB0F14E3C32C00136104 /* Release */,
+				B1A4DB1014E3C32C00136104 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1A4DB1114E3C32C00136104 /* Build configuration list for PBXNativeTarget "Searcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1A4DB1214E3C32C00136104 /* Release */,
+				B1A4DB1314E3C32C00136104 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B1A4DAE714E3C32C00136104 /* Project object */;
+}
